@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="styleGeo.css">
+ 	<!--Link de suporte do dado pelo site -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!--Script de suporte dado pelo site -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+	<title>Geolocalização</title>
+</head>
+<body>
+	<div id="cabecalho">
+	<h1>Geolocalização de onde você está</h1>
+	<h2>Digite a latitude do 1° ponto:</h2>
+	<input id="latitude"  type="txt" name="latitude">
+	<h2>Digite a longitude do 1° ponto:</h2>
+	<input id="longitude"  type="txt" name="longitude">
+	<h2>Digite a latitude do 2° ponto:</h2>
+	<input id="latitude2"  type="txt" name="latitude">
+	<h2>Digite a longitude do 2° ponto:</h2>
+	<input id="longitude2"  type="txt" name="longitude">
+	<button id="btn_buscar">Buscar</button>
+	</div>
+	<div id="mapid" style="height: 700px" "width: 500px"></div>
+<!--Script -->
+<script src="apiJS.js"></script>
+
+</body>
+</html>

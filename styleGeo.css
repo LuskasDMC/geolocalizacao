@@ -1,0 +1,10 @@
+body{
+	margin: 0px;
+	background-image:url(geo.jpg);
+}
+#cabecalho{
+	width: 1000	px;
+	padding: 30px;
+	background-color: grey;
+	opacity: 0.75;
+}
