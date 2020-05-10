@@ -1,10 +1,8 @@
- navigator.geolocation.getCurrentPosition(f1);
-//se funcionar:
+navigator.geolocation.getCurrentPosition(f1);
 function f1(pos){
 	console.log(pos);
 	var lat = pos.coords.latitude;
 	var long = pos.coords.longitude;
-// para dar um alerta da posição	alert(lat + ", " + long)
 	mymap.setView([lat,long],13)
 }
 
@@ -31,7 +29,7 @@ var polygon = L.polygon([
 
 
 //Códigos para o funcionamento
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('map_id').setView([51.505, -0.09], 13);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
